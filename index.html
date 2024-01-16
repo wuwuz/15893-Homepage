@@ -1,0 +1,162 @@
+
+<!-- saved from url=(0044)https://www.cs.cmu.edu/~15435-f23/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body data-new-gr-c-s-check-loaded="14.1149.0" data-gr-ext-installed=""><doctype html="">
+
+
+	<meta name="generator" content="Hugo 0.57.2">
+    <title> - Foundations of Blockchains </title>
+    <link rel="stylesheet" type="text/css" href="./index_files/fonts.css">
+    <link rel="stylesheet" type="text/css" href="./index_files/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="./index_files/styles.css">
+    
+    
+    
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="alternate" type="application/rss+xml" href="https://www.cs.cmu.edu/index.xml" title="">
+    
+
+<header class="page-header">
+    <div class="myname"> 
+        <h5>Special topics: Cryptography meets algorithms (15893) Spring 2024</h5>  
+    </div>
+    <nav>
+        <ul class="navbar">
+            <li class="activetab">
+                <a href="index.html">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="policies.html">
+                    <span>Policies</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="syllabus.html">
+                    <span>Syllabus</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="officehours.html">
+                    <span>Office Hours</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div id="content">
+    <main>
+        
+        
+        
+        
+        
+
+<h4 id="instructor-elaine-shi-http-elaineshi-com">Instructor: <a href="http://elaineshi.com/">Elaine Shi</a></h4>
+
+<h4 id="monday-wednesday-930am-1050am">Monday/Wednesday 9:30am - 10:50am</h4>
+
+<h4 id="location-zoom">GHC 4303 + <a href = https://cmu.zoom.us/j/92581586463?pwd=MjRXQUxtejZoY3hnL1BybnpBSmhaUT09>Zoom</a></h4>
+
+<hr>
+
+<h3 id="course-description">Course Description</h3>
+
+<p>In this course, we will learn a few selected interesting topics in cryptography:</p>
+
+<ol>
+<li><p><strong>Private Information Retrieval (PIR):</strong> PIR allows a client to privately read a public database without the server learning the actual query made by the client. We will cover a few classical constructions of PIR (information-theoretic, computational) and some new constructions in the preprocessing model.</p></li>
+
+<li><p><strong>Oblivious RAM (ORAM):</strong> ORAM allows a client to safely delegate storage to a server and then read/write the storage without the server learning the access pattern. 
+    We will cover generic constructions (PathORAM, Hierarchical ORAM and OptORAMa), some specific oblivious data structures/algorithms, lower bounds on oblivious algorithm and some applicaions of ORAM.</p></li>
+
+<li><p><strong>Zero Knowledge Proofs (ZKP):</strong> ZKP allows a prover to prove a statement to a verifier, while the verifier only learns the trueness of the statement and nothing else. We will cover how to construct ZKP for special statements, and then generic constructions. </p></li>
+</ol>
+
+<p> (The content is subject to change.)</p>
+
+<p>Students are required to (1) take notes; (2) read and present relevant papers; (3) explore relevant research topics. </p>
+
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li><p>Comfortable with writing formal mathematical proofs. </p></li>
+<li><p>Familiar with probabilities. </p></li>
+<li><p> Solid background of algorithms. </p></li>
+<li><p>At least undergrad-level cryptography course. (Or a solid background on randomized algorithms) </p></li>
+</ul>
+
+
+<h3 id="course-staff">Course Staff</h3>
+
+<p><strong>Instructor:</strong> Elaine Shi (please contact me through the private message of Piazza)</p>
+<p><strong>TA:</strong> Mingxun Zhou(mingxunz@andrew.cmu.edu)</p>
+
+<p>When sending an email to TA, start with "15893: " in the email title. </p>
+
+<h3 id="links">Useful Links</h3>
+
+<ul>
+<!-- 
+    <li><a href="https://piazza.com/class/ll5sgjgamz24yj">Piazza </a></li>
+<li><a href="https://cmu.zoom.us/j/95484659659?pwd=QllWZnArcExMR1FiaEtIV3h1aExSUT09">Zoom (lecture) </a></li>
+<li><a href="https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=2d0d094b-62a1-4ab6-bc45-b06d0107952d">Panopto </a></li>
+    <li><a href="https://www.gradescope.com/courses/569261">Gradescope </a></li>
+We use Gradescope to distribute the homework. If you're not registered on Gradescope, please specify your AndrewID and contact Hao Chung (haochung@andrew.cmu.edu) to get the access.
+-->
+<li><a href = "https://cmu.zoom.us/j/92581586463?pwd=MjRXQUxtejZoY3hnL1BybnpBSmhaUT09"> Zoom (lecture) </a></li>
+<li><a href="https://diffpriv.youcanbook.me/">Sign up Elaine's office hour</a></li>
+<li><a href="https://drive.google.com/file/d/12AJVTEubVVTfGkutcFU60MyMNMRjUw4M/view?usp=sharing"> Scribe Note Template</a>
+</ul>
+
+<h3 id="attendance-options">Attendance Options</h3>
+
+
+We encourage in-person attendance (e.g. attending >80% lectures). There'll be 10% of participation grade for in-person attendance. 
+However, in case you can't be there in person, we do offer a couple more options for you:
+<ul>
+<li>You can attend the lecture synchronously via Zoom.
+</li><li>You can also watch the recorded lecture videos asynchronously on Panopto.
+The Panapto link will be posted later.
+</li></ul>
+
+<h3 id="suggested-readings">Suggested Readings</h3>
+
+<ul>
+<li>[JL] <a href="http://www.cs.umd.edu/~jkatz/imc.html">Introduction to Modern Cryptography</a> by Jonathan Katz and Yehuda Lindell</li>
+<li>[S] <a href="https://www.distributedconsensus.net/">Foundations of Distributed Consensus and Blockchains</a> by Elaine Shi</li>
+<li>[G] <a href="https://www.cs.cmu.edu/~goyal/15356/lecture_notes.pdf"> Lecture Notes on Introduction to Cryptography</a> by Vipul Goyal</li></ul>
+
+
+        
+
+        
+
+    </main>
+
+        </div><footer>
+    <span></span>
+</footer>
+
+
+</doctype></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
